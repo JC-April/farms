@@ -6,7 +6,9 @@ import logo from "../../assets/logo.png";
 const Navbar = () => {
   return (
     <nav className="container">
-      <img src={logo} alt="" className="logo" />
+      <Link to="hero" smooth={true} offset={0} duration={500}>
+        <img src={logo} alt="" className="nav-logo" />
+      </Link>
       <ul>
         <li>
           <Link
@@ -22,24 +24,27 @@ const Navbar = () => {
 
         <li>
           {" "}
-          <Link to="about" smooth={true} offset={260} duration={500}>
+          <Link to="about" smooth={true} offset={-100} duration={500}>
             About Us
           </Link>
         </li>
         <li>
-          <Link to="services" smooth={true} offset={260} duration={500}>
+          <Link to="services" smooth={true} offset={-100} duration={500}>
             Services
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} offset={260} duration={500}>
+          <Link to="testimonials" smooth={true} offset={-100} duration={500}>
+            Testimonials
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} offset={-100} duration={500}>
             Contact Us
           </Link>
         </li>
       </ul>
-      <button to="contact" className="btn">
-        Get Started
-      </button>
+      <button className="btn">Get Started</button>
     </nav>
   );
 };

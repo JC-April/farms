@@ -4,34 +4,30 @@
   padding: 20px;
 }
 
-.footer .container {
+.footer .footer-ul {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.footer .container li {
-  flex-basis: 25%;
+.footer li {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-contact ul li,
-.footer-1,
-.explore ul li,
-.others ul li {
-  display: flex;
-  align-items: flex-start;
+  max-width: 500px;
   padding: 10px;
 }
 
-.footer-1 .footer-logo {
-  width: 50%;
-}
+.footer-1 {
+  p {
+    padding: 20px 0;
+    line-height: 1.4;
+  }
 
-.footer-contact-list {
+  .many {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 90px;
+  }
+}
+.footer-contact ul li {
   display: flex;
-  align-items: flex-start;
-  margin: 5px 0;
 }

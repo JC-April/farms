@@ -11,7 +11,7 @@ import phone from "../../assets/phone-icon.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <ul className="container">
+      <ul className=" container footer-ul">
         <li className="footer-1">
           <img src={logo} alt="logo" className="footer-logo" />
           <p>
@@ -50,16 +50,18 @@ const Footer = () => {
           <ul>
             <li className="footer-contact-list">
               <img src={phone} alt="phone icon" />
-              08053789452
+              <p>08053789452</p>
             </li>
             <li className="footer-contact-list">
               <img src={mail} alt="mail icon" />
-              Farmsol@servicemail.com
+              <p>Farmsol@servicemail.com</p>
             </li>
             <li className="footer-contact-list">
               <img src={location} alt="location icon" />
-              Plot 345 Trans Amadi Industrial Layout, <br /> Port Harcourt,
-              Rivers State
+              <p>
+                Plot 345 Trans Amadi Industrial Layout, <br /> Port Harcourt,
+                Rivers State
+              </p>
             </li>
           </ul>
         </li>
